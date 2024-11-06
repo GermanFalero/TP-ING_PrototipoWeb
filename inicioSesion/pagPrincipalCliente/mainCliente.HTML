@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal - Sistema de Encuestas</title>
+    <link rel="stylesheet" href="stylesCliente.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Encuestas Médicas</div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container"> 
+        <div class="section">
+            <h3>Ver mi consulta</h3>
+            <p>Aquí puedes ver los detalles de tu consulta médica. [Información de consulta aquí]</p>
+        </div>
+
+        <div class="mini-survey" id="miniSurvey">
+            <h3>Encuesta Rápida</h3>
+            <button id="showSurveyBtn">Completar Encuesta</button>
+            <form id="surveyForm" style="display: none;">
+                <div class="question">
+                    <label for="q1">1. ¿Cómo calificarías la organización del centro?</label>
+                    <input type="number" id="q1" name="q1" min="1" max="10" required>
+                </div>
+                <div class="question">
+                    <label for="q2">2. ¿Qué puntaje le das a los tiempos de atención?</label>
+                    <input type="number" id="q2" name="q2" min="1" max="10" required>
+                </div>
+                <div class="question">
+                    <label for="q3">3. ¿Cómo calificarías la limpieza del centro?</label>
+                    <input type="number" id="q3" name="q3" min="1" max="10" required>
+                </div>
+                <div class="question">
+                    <label for="q4">4. ¿Cómo evalúas la amabilidad del personal?</label>
+                    <input type="number" id="q4" name="q4" min="1" max="10" required>
+                </div>
+                <div class="question">
+                    <label for="q5">5. ¿Qué tan accesible es el centro?</label>
+                    <input type="number" id="q5" name="q5" min="1" max="10" required>
+                </div>
+                <div class="question">
+                    <label for="q6">6. ¿Cómo calificarías los servicios ofrecidos?</label>
+                    <input type="number" id="q6" name="q6" min="1" max="10" required>
+                </div>
+                <div class="question">
+                    <label for="q7">7. ¿Qué puntaje le das a la comodidad del lugar?</label>
+                    <input type="number" id="q7" name="q7" min="1" max="10" required>
+                </div>
+                <div class="question">
+                    <label for="q8">8. ¿Cómo calificarías la información proporcionada?</label>
+                    <input type="number" id="q8" name="q8" min="1" max="10" required>
+                </div>
+                <div class="question">
+                    <label for="q9">9. ¿Qué tan rápido son atendidos los pacientes?</label>
+                    <input type="number" id="q9" name="q9" min="1" max="10" required>
+                </div>
+                <div class="question">
+                    <label for="q10">10. ¿Cómo calificarías la resolución de tus inquietudes?</label>
+                    <input type="number" id="q10" name="q10" min="1" max="10" required>
+                </div>
+                <div class="question">
+                    <label for="comment">Comentario:</label>
+                    <textarea id="comment" name="comment" rows="4" placeholder="Deja tu comentario aquí..."></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="logica.js"></script>
+</body>
+</html>

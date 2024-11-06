@@ -1,0 +1,172 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('fotoPrincipal.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 123, 255, 0.9);
+    color: white;
+    position: fixed;
+    width: 98%;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    height: 90vh; 
+    padding-top: 80px; 
+}
+
+/* Selectores */
+.selectors {
+    display: flex;
+    flex-direction: column;
+    width: 25%; 
+    margin-right: 20px; 
+}
+
+.zone-selector, .center-selector {
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    background-color: rgba(255, 255, 255, 0.95); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 15px; 
+}
+
+.selected-zone {
+    cursor: pointer; 
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    border: 2px solid #007BFF; 
+}
+
+.zone-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.zone-list li {
+    padding: 8px;
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+    margin-top: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+
+.zone-list li:hover {
+    background-color: #e9f7fe;
+}
+
+.center-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.center-list li {
+    margin-top: 8px;
+}
+
+.center-box {
+    padding: 10px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    background-color: #f1f8ff; 
+    text-align: center;
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+
+.center-box:hover {
+    background-color: #cce5ff;
+}
+
+/* Cuadro de información del centro */
+.center-info-box {
+    padding: 10px;
+    border: 1px solid #007BFF;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    margin-top: 15px;
+}
+
+.center-info-box h5 {
+    margin: 0;
+    font-size: 16px;
+    color: #007BFF;
+}
+
+.center-info-box p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Estilos del botón "Consultar Reportes" */
+.center-info-box .report-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.center-info-box .report-button:hover {
+    background-color: #0056b3;
+}
+
+/* Contenedor del mapa */
+.map-container {
+    width: 70%; 
+    height: 100%; 
+    border: 2px solid #ddd; 
+    border-radius: 5px; 
+    margin-left: 25px;
+}

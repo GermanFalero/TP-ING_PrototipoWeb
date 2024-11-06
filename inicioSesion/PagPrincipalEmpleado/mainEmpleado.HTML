@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal - Sistema de Encuestas</title>
+    <link rel="stylesheet" href="stylesEmpleado.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Encuestas Médicas</div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Reportes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container"> 
+        <div class="selectors">
+            <div class="zone-selector" id="zoneSelector">
+                <div class="selected-zone">Selecciona una Zona</div>
+                <ul class="zone-list" id="zoneList" style="display: none;">
+                    <li>Zona 1</li>
+                    <li>Zona 2</li>
+                    <li>Zona 3</li>
+                    <li>Zona 4</li>
+                    <li>Zona 5</li>
+                </ul>
+            </div>
+
+            <div class="center-selector" id="centerSelector" style="display: none;">
+                <h4>Centros Disponibles</h4>
+                <ul class="center-list" id="centerList">
+                    <li class="center-box" data-address="Dirección 1" data-description="Descripción del Centro Médico 1">Centro Médico 1</li>
+                    <li class="center-box" data-address="Dirección 2" data-description="Descripción del Centro Médico 2">Centro Médico 2</li>
+                    <li class="center-box" data-address="Dirección 3" data-description="Descripción del Centro Médico 3">Centro Médico 3</li>
+                </ul>
+                <div class="center-info-box" id="centerInfoBox" style="display: none;">
+                    <h5>Información del Centro Médico</h5>
+                    <p id="centerInfoText"></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="map" class="map-container"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="mapa.js"></script>
+</body>
+</html>
+

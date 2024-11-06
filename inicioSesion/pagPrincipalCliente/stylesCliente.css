@@ -1,0 +1,168 @@
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-image: url('fotoPrincipal.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 123, 255, 0.9);
+    color: white;
+    position: fixed;
+    width: 98%;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    color: #ddd;
+}
+
+.container {
+    display: flex; 
+    justify-content: space-around; 
+    align-items:start;
+    height: 90vh; 
+    padding-top: 150px;
+}
+
+.section {
+    width: 65%; 
+    padding: 20px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    background-color: rgba(255, 255, 255, 0.95); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.mini-survey {
+    width: 350px; 
+    max-height: 80vh;
+    padding: 25px; 
+    border: 1px solid #ddd; 
+    border-radius: 15px; 
+    background-color: rgba(255, 255, 255, 0.95); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+    backdrop-filter: blur(10px); 
+    overflow-y: auto; 
+    margin-top: 0px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.mini-survey h3 {
+    text-align: center;
+    color: #007BFF;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.mini-survey button {
+    padding: 12px;
+    background-color: #007BFF; 
+    color: white; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; 
+    font-size: 16px;
+    margin-bottom: 15px; 
+}
+
+.mini-survey button:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
+}
+
+.mini-survey button:active {
+    transform: translateY(1px); 
+}
+
+.mini-survey form {
+    display: flex;
+    flex-direction: column;
+    display: none; /* oculto formulario */
+}
+
+.question {
+    margin-bottom: 20px; 
+}
+
+.question label {
+    font-weight: bold; 
+    color: #555; 
+    margin-bottom: 8px;
+    display: block; 
+}
+
+.question input[type="number"], 
+textarea {
+    padding: 10px;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    transition: border-color 0.3s, box-shadow 0.3s;
+    width: 100%; 
+    box-sizing: border-box; 
+    background-color: #f9f9f9; 
+    margin-top: 5px; 
+}
+
+.question input[type="number"]:focus, 
+textarea:focus {
+    border-color: #007BFF; 
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); 
+}
+
+textarea {
+    resize: vertical; 
+    min-height: 80px; 
+}
+
+button[type="submit"] {
+    padding: 12px;
+    background-color: #007BFF; 
+    color: white; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; 
+    font-size: 16px;
+    margin-top: 10px; 
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
+}
+
+button[type="submit"]:active {
+    transform: translateY(1px); 
+}
