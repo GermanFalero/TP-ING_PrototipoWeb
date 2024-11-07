@@ -1,0 +1,6 @@
+Usuarios para testear el inicio de sesión
+
+Username: cliente1        password: password1,    rol: 'cliente' 
+Usernae: PedroRelampago   password: 12345,        rol: 'cliente' 
+Username: empleado1       password: password2,    rol: 'empleado' 
+Username: JoseCentellas'  password: 12345,        rol: 'empleado' 
